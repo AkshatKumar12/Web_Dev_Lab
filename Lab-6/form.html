@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+    form {
+      background-color: rgb(115, 103, 160,0.8);
+      padding: 20px;
+      border-style: dashed;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(48, 9, 154, 0.1);
+      width: 400px;
+    }
+
+    fieldset {
+      border: 3px solid #111010;
+      margin-bottom: 10px;
+    }
+
+    label {
+      display:block;
+      margin-top: 10px;
+    }
+
+    .form-buttons input {
+      padding: 10px 20px;
+      border: 5px;
+      border-radius: 5px;
+      background-color: #410b92;
+      color: rgb(250, 249, 254);
+      cursor:grab;
+    }
+
+    .form-buttons input[type="reset"] {
+      background-color: #410b92;
+    }
+
+    .form-buttons input:hover {
+      opacity: 0.5;
+    }
+  </style>
+<body>
+    
+    
+  <form action="your_action_page.php">
+    <fieldset>
+      <legend style="font-size: 22px;">Basic Information</legend>
+
+      <label for="nm" >Full name:</label>
+      <input type="text" id="nm" name="nm" required>
+
+      <label for="dob">Birth date:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label>Gender:</label>
+      <label for="male">
+        <input type="checkbox" id="male" name="gender" value="male" required> Male
+      </label>
+      <label for="female">
+        <input type="checkbox" id="female" name="gender" value="female"> Female
+      <label for="other">
+        <input type="checkbox" id="other" name="gender" value="other"> Prefer not say
+      </label>
+
+      <label>Course:</label>
+      <label for="Btech">
+        <input type="radio" id="Btech" name="Course" value="Btech" required> Btech
+      </label>
+      <label for="BCA">
+        <input type="radio" id="BCA" name="BCA" value="BCA"> BCA
+      </label>
+
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" required>
+
+      <label for="phno">Phone Number:</label>
+      <input type="tel" id="phno" name="phno" pattern="[0-9]{10}" required>
+    </fieldset>
+
+    <fieldset>
+      <legend style="font-size: 22px;">Extra Information</legend>
+
+      <label>Interest:</label>
+      <label for="books">
+        <input type="checkbox" id="books" name="interest" value="books"> Books
+      </label>
+      <label for="movies">
+        <input type="checkbox" id="movies" name="interest" value="movies"> Movies
+      </label>
+      <label for="games">
+        <input type="checkbox" id="games" name="interest" value="games"> Video games
+      </label>
+
+      <label for="color">Favorite Color:</label>
+      <select id="color" name="color" required>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+        <option value="yellow">Yellow</option>
+        <option value="orange">Orange</option>
+      </select>
+    </fieldset>
+
+    <div class="form-buttons">
+      <input type="submit" value="Send Data">
+      <input type="reset" value="Reset Form">
+    </div>
+  </form>
+
+</body>
+</html>
