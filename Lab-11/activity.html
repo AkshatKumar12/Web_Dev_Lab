@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity</title>
+
+    <style>
+        .box1{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+
+            transition: all 2s ease;
+        }
+        .box1:hover{
+            rotate: 360deg;
+            background-color:orange;
+        }
+
+        .box2{
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+
+            transition: all 2s ease;
+        }
+        .box2:hover{
+            width: 300px;
+            height: 300px;
+            background-color: yellowgreen;
+        }
+
+        .box3{
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            
+            transition: all 2s ease;
+        }
+        .box3:hover{
+            border-radius: 500px;
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h3>Rotate</h3>
+        <p class="box1"></p>
+    </div>
+
+    <div>
+        <h3>Grow</h3>
+        <p class="box2"></p>
+    </div>
+
+    <div>
+        <h3>circle</h3>
+        <p class="box3"></p>
+    </div>
+</body>
+</html>

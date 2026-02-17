@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>round corner</title>
+
+    <style>
+        .round{
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            background-color: aquamarine;
+            height: 80vh;
+            width: 80vh;
+            border-radius: 1000px; 
+            transition: background-color 0.5s ease-in-out;
+        }
+        .round:hover{
+            border-radius: 0px;
+            background-color: rgb(66, 9, 238);
+
+        }
+        .newspaper{
+            column-count: 3;
+            column-gap: 20px;
+        }
+        .newspaper .b{
+            background-color:rgb(221, 245, 6);
+        }
+        .newspaper .a{                                                          
+            background-color: red
+        }
+        .newspaper .c{
+            background-color:rgb(17, 237, 46)
+        }
+    </style>
+</head>
+<body>
+    <div class = "round">
+    </div>
+
+    <div class = "newspaper">
+        <p class="a">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim quae error dignissimos. Ducimus voluptates natus voluptatem, praesentium exercitationem ab minus veritatis mollitia labore tenetur voluptatii.
+        </p>
+        <p class="b">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod numquam, molestias sed nihil fuga voluptas fugit possimus omnis, iste beatae sint saepe corrupti ea sunt itaque labore blanditiis ullam quasi.
+        </p>
+        <p class="c">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa tenetur quasi cum quam! Modi illo ratione repudiandae fuga id magnam culpa esse voluptatem eius necessitatibus maiores, ex, eaque est hicfdsdf?
+        </p>
+    </div>
+</body>
+</html>
