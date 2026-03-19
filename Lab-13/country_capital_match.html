@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+</head>
+<body>
+    <select name="Country" id="country">
+        <option value="ind">India</option>
+        <option value="usa">USA</option>
+        <option value="rus">Russia</option>
+        <option value="isr">Israel</option>
+        <option value="jap">Japan</option>
+    </select>
+    
+    <br>
+    <br>
+    <br>
+    
+    <select name="Capital" id="capital">
+        <option value="del">Delhi</option>
+        <option value="was">Washington DC</option>
+        <option value="mos">Moscow</option>
+        <option value="tel">Tel Aviv</option>
+        <option value="tok">Tokyo</option>
+    </select>
+
+    <br>
+    <button onclick="check()">Check</button>
+
+    <script>
+        mpp = {
+            "ind" : "del",
+            "usa" : "was",
+            "rus" : "mos",
+            "isr" : "tel",
+            "jap" : "tok"
+        }
+        function check(){
+            var country = document.getElementById("country").value;
+            var capital= document.getElementById("capital").value;
+
+            if(mpp[country] == capital){
+                alert("Valid!");
+            }
+            else{
+                alert("Invalid!");
+            }
+        }
+
+    </script>
+
+    
+</body>
+</html>
