@@ -7,65 +7,62 @@
   </head>
   <body>
     <h2>Name</h2>
-    <input type="text" id="name">
-    <p id = "outputname"></p>
-    <br>
-    
+    <input type="text" id="name" />
+    <p id="outputname"></p>
+    <br />
+
     <h2>Mail</h2>
-    <input type="text" id="mail">
-    <p id = "outputmail"></p>
-    <br>
-    
+    <input type="text" id="mail" />
+    <p id="outputmail"></p>
+    <br />
+
     <h2>password</h2>
-    <input type="text" id="password">
-    <p id = "outputpassword"></p>
-    <br>
+    <input type="text" id="password" />
+    <p id="outputpassword"></p>
+    <br />
 
     <button onclick="checkname()">Validate Name</button>
     <button onclick="checkmail()">Validate Email</button>
     <button onclick="checkpassword()">Validate password</button>
-    
+
     <script>
       function checkname() {
-       var name = document.getElementById("name").value;
-       var regex = /^[a-zA-Z ]+$/;
-       var res = regex.test(name);
-       console.log(res);
-       if(res == true){
-        document.getElementById("outputname").innerHTML="Valid Name";
+        var name = document.getElementById("name").value;
+        var regex = /^[a-zA-Z ]+$/;
+        var res = regex.test(name);
+        console.log(res);
+        if (res == true) {
+          document.getElementById("outputname").innerHTML = "Valid Name";
+        } else {
+          document.getElementById("outputname").innerHTML = "Invalid Name";
+        }
       }
-      else{
-         document.getElementById("outputname").innerHTML="Invalid Name";
-       }
-      }
-      
+
       function checkmail() {
         var mail = document.getElementById("mail").value;
         var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         var res = regex.test(mail);
         console.log(res);
-        if(res == true){
-         document.getElementById("outputmail").innerHTML="Valid Mail";
+        if (res == true) {
+          document.getElementById("outputmail").innerHTML = "Valid Mail";
+        } else {
+          document.getElementById("outputmail").innerHTML = "Invalid Mail";
         }
-      else{
-         document.getElementById("outputmail").innerHTML="Invalid Mail";
-       }
       }
-      
+
       function checkpassword() {
         var password = document.getElementById("password").value;
         var regex = /^[a-zA-Z0-9!@#$%^&*]{8,}$/;
         var res = regex.test(password);
         console.log(res);
-        if(res == true){
-         document.getElementById("outputpassword").innerHTML="Valid Password";
-        }
-        else{
-          document.getElementById("outputpassword").innerHTML="Invalid Password";
+        if (res == true) {
+          document.getElementById("outputpassword").innerHTML =
+            "Valid Password";
+        } else {
+          document.getElementById("outputpassword").innerHTML =
+            "Invalid Password";
         }
       }
     </script>
   </body>
 </html>
-
-
