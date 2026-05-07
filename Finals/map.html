@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <form action="">
+        <label for="country"></label><br>
+        <input type="text" id = "country"><br>
+        <label for="country"></label><br>
+        <input type="text" id = "curr"><br>
+
+        <button onclick="checker()">Check</button>
+
+    </form>
+
+    <script>
+        mpp = {
+            india : "rup",
+            japan : "yen"
+        }
+        function checker(){
+            cntry = document.getElementById("country").value
+            curr = document.getElementById("curr").value
+
+            if(mpp[cntry] == curr){
+                alert("VALID");
+            }
+            else{
+                alert("INVALID");
+            }
+        }
+    </script>
+</body>
+</html>
